@@ -51,6 +51,21 @@
             Circle c2 = c1;
             c2.radius = 60;
             Console.WriteLine(c1.radius);
+
+
+            string s1 = "hello";
+            string s2 = s1;
+
+            s2 = "bye";
+            Console.WriteLine(s1);
+
+
+            string num = null;
+            //int nn = int.Parse(num);
+            
+
+            int nn = Convert.ToInt32(num);
+            Console.WriteLine(nn);
         }
     }
 
