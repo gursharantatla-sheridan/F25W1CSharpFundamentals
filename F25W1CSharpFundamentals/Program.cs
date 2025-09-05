@@ -11,7 +11,7 @@
 
             int m = n + 10;
 
-            int i = 5;
+            //int i = 5;
             double d = 5.5;
 
             float f = 5.5F;
@@ -31,6 +31,31 @@
 
             // string interpolation
             Console.WriteLine($"a = {a}, b = {b} and c = {c}");
+
+            Console.WriteLine("\n\n\n");
+
+
+
+            int i = 5;
+            int j = i;
+
+            i++;
+            Console.WriteLine(j);
+
+
+            Circle c1 = new Circle();
+            Console.WriteLine(c1.radius);
+            c1.radius = 20;
+            Console.WriteLine(c1.radius);
+
+            Circle c2 = c1;
+            c2.radius = 60;
+            Console.WriteLine(c1.radius);
         }
+    }
+
+    class Circle
+    {
+        public int radius;
     }
 }
